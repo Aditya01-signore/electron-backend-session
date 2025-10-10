@@ -12,6 +12,9 @@ app.use(express.json());
 
 let sessions = new Map();
 // interviewer creates session
+app.get("/", (req, res) => {
+  res.send("hello from server")
+})
 app.post('/sessions', (req, res) => {
   let roomId = uuidv4();
   roomId = roomId.slice(0, 6);

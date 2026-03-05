@@ -25,6 +25,7 @@ app.post('/sessions', (req, res) => {
 
 // candidate joins
 // candidate joins
+
 app.post('/join', (req, res) => {
   const { roomId } = req.body;
   const session = sessions.get(roomId);
